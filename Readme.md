@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Полина Кузьмина](https://up.htmlacademy.ru/htmlcss/35/user/2098917).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий (sench) Железцов] (https://htmlacademy.ru/profile/sench).
 
 ---
 
