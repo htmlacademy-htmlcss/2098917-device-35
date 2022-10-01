@@ -11,7 +11,7 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
-      <a href="#"><img class="logo" src="#" alt="Лого интернет-магазина Девайс"></a>
+      <a href="#"><img class="logo" src="images/index/logo.svg" width="145" height="36" alt="Лого интернет-магазина Девайс"></a>
       <nav class="top-half-navigation">
         <form class="top-navigation-form">
           <label class="top-navigation-search-label">
@@ -24,6 +24,7 @@
         <ul class="top-left-navigation-list">
           <li class="top-left-navigation-item">
             <label class="Account-entrance-label">
+              <img src="images/index/Enter.svg" width="13" height="12" alt="Иконка входа">
               <input class="Account-entrance-input" type="button" value="Войти">
             </label>
           </li>
@@ -31,11 +32,13 @@
         <ul class="top-right-navigation-list">
           <li class="top-right-navigation-item">
             <label class="compare-label">
+              <img src="images/index/Compare.svg" width="10" height="12" alt="Иконка входа">
               <input class="compare-input" type="button" value="Сравнить">
             </label>
           </li>
           <li class="top-right-navigation-item">
             <label class="shopping-cart-label">
+            <img src="images/index/cart.svg" width="16" height="14" alt="Иконка входа">
             <input class="shopping-cart-input" type="button" value="Корзина">
           </label>
           </li>
@@ -44,7 +47,9 @@
       <nav class="bottom-navigation">
         <ul class="bottom-navigation-catalog">
           <li class="bottom-navigation-catalog-item">
-            <a class="bottom-navigation-catalog-link" href="#">каталог товаров</a>
+            <a class="bottom-navigation-catalog-link" href="#">каталог товаров
+              <span class="catalog-icon">+</span>
+            </a>
             <div class="bottom-navigation-catalog-dropdown">
               <ul class="dropdown-1">
                 <!--more info: 9.1 поповер focus-within-->
@@ -100,6 +105,7 @@
       <section class="catalog-products">
 
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <em class="section-name">ФИЛЬТР:</em>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
           <fieldset class="price-range">
@@ -191,7 +197,8 @@
         <!--Side panel ends-->
 
         <!--Top right selection panel starts-->
-
+        <!--Should I wrap this section up in the <section> tag??-->
+        <em class="section-name">СОРТИРОВКА:</em>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Популярные</option>
           <option value="cheap">Дешёвые</option>
@@ -200,10 +207,12 @@
 
         <a href="#" class="button arrow-up">
           <span class="visually hidden">Прямая сортировка</span>
+          <img src="images/catalog/sorting-arrow (1).svg" alt="Прямая сортировка">
         </a>
 
         <a class="button arrow-down" href="#">
           <span class="visually-hidden">Обратная сортировка</span>
+          <img src="images/catalog/sorting-arrow-down (1).svg" alt="Обратная сортировка">
         </a>
         <!--Top right selection panel ends-->
 
@@ -211,7 +220,7 @@
         <ul class="product-cards-list">
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="#" alt="Любительская селфи-палка">
+              <img class="product-card-image" src="images/catalog/monopode-1.jpg" alt="Любительская селфи-палка">
               <h3 class="product-card-title">Любительская селфи-палка</h3>
             </a>
             <b class="product-card-price">500 ₽</b>
@@ -219,7 +228,7 @@
 
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="#" alt="Профессиональная селфи-палка">
+              <img class="product-card-image" src="images/catalog/monopode-2.jpg" alt="Профессиональная селфи-палка">
               <h3 class="product-card-title">Профессиональная селфи-палка</h3>
             </a>
             <b class="product-card-price">1 500 ₽</b>
@@ -227,7 +236,7 @@
 
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="#" alt="Непотопляемая селфи-палка">
+              <img class="product-card-image" src="images/catalog/monopode-3.jpg" alt="Непотопляемая селфи-палка">
               <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
             </a>
             <b class="product-card-price">2 500 ₽</b>
@@ -235,7 +244,7 @@
 
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="#" alt="Селфи-палка Следуй за мной">
+              <img class="product-card-image" src="images/catalog/monopode-4.jpg" alt="Селфи-палка Следуй за мной">
               <h3 class="product-card-title">Селфи-палка "Следуй за мной"</h3>
             </a>
             <b class="product-card-price">1 500 ₽</b>
@@ -289,8 +298,9 @@
     </main>
 
     <footer class="page-footer">
+      <h2 class="visually-hidden">Подвал сайта</h2>
       <div class="footer-left">
-        <a class="footer-logo-link" href="#"><img src="#" alt="логотип интернет-магазина Девайс"></a>
+        <a class="footer-logo-link" href="#"><img src="images/index/logo-footer.svg" alt="логотип и1нтернет-магазина Девайс"></a>
         <p class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         <p class="footer-decor">&#8212;</p>
       </div>
@@ -312,20 +322,26 @@
         <div class="footer-social-media">
           <ul class="social-media-list">
             <li class="social-media-item">
-              <a href="#" class="social-tg"><span class="visually-hidden">Telegram</span></a>
+              <a href="#" class="social-tg"><span class="visually-hidden">Telegram</span>
+              <img src="images/index/Social-Telegram.svg" alt="Телеграм">
+              </a>
             </li>
             <li class="social-media-item">
-              <a href="#" class="social-yt"><span class="visually-hidden">YouTube</span></a>
+              <a href="#" class="social-yt"><span class="visually-hidden">YouTube</span>
+                <img src="images/index/social-youtube.svg" alt="YouTube">
+              </a>
             </li>
             <li class="social-media-item">
-              <a href="#" class="social-tw"><span class="visually-hidden">Twitter</span></a>
+              <a href="#" class="social-tw"><span class="visually-hidden">Twitter</span>
+                <img src="images/index/social-twitter.svg" alt="Twitter">
+              </a>
             </li>
           </ul>
         </div>
       </div>
       <div class="footer-right">
         <a class="footer-phone-number" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-        <img class="html-academy-logo" src="#" alt="логотип html.academy">
+        <img class="html-academy-logo" src="images/index/html-academy-footer.svg" alt="логотип html.academy">
       </div>
     </footer>
   </body>
