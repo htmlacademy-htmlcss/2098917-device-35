@@ -1,0 +1,646 @@
+
+/*----------------------------------------------------------------------------------General*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/raleway/raleway-800.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/rubik/rubik-400.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/rubik/rubik-700.woff2) format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: #FFFFFF;
+  color: #444444;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+/*----------------------------------------------------------------------------------Header*/
+
+.page-header {
+  color: #000000;
+  width: 1440px;
+}
+
+.page-header h1 {
+  text-indent: -9999px;
+}
+
+.header-background-wrapper {
+  width: 1160px;
+  height: 186px;
+  background-color:#FFE17F;
+  left: 0;
+  right: 0;
+  margin: 20px auto;
+  text-indent: -9999px;
+  /*display: none;*/
+}
+
+.transparent-header-menu-wrapper {
+  width: 1040px;
+  height: 186px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/*----------------------------------------------------------------------------------navigation*/
+.top-navigation-form {
+  display: inline;
+}
+
+.top-left-navigation-list,
+.top-right-navigation-list,
+.bottom-navigation-catalog,
+.bottom-navigation-catalog-item,
+.bottom-right-navigation-list,
+.bottom-right-navigation-item
+ {
+  display: inline;
+}
+
+.top-right-navigation-item, .top-left-navigation-item {
+  display: inline;
+}
+
+.navigation-link-top {
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+
+.navigation-link-bottom {
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+
+.bottom-navigation {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.bottom-navigation-catalog-dropdown {
+  display: none;
+}
+
+
+/*---------------------------Index Page Styles---------------------------*/
+
+/*----------------------------------------------------------------------------------Slider*/
+
+.slider {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.slider h2, .slider h3 {
+  text-indent: -9999px;
+}
+
+.yellow-background {
+  width: 1160px;
+  height: 300px;
+  background-color: #FFE17F;
+}
+
+.picture {
+  width: 560px;
+}
+
+.information {
+  width: 560px;
+}
+
+.index-columns {
+  display: flex;
+}
+
+
+/*----------------------------------------------------------------------------------shop-menu-in-yellow-boxes*/
+
+.shop-menu {
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.shop-menu h2 {
+  text-indent: -9999px;
+}
+
+.shop-menu-list {
+  list-style: none;
+  -webkit-column-count: 6;
+  -webkit-column-gap: 40px;
+}
+
+li.shop-menu-item {
+  height: 160px;
+  width: 160px;
+  list-style: none;
+  background-color: #FFE17F;
+  margin: 5px;
+}
+
+.yellow-box {
+  display: block;
+}
+
+.shop-menu-link {
+  text-decoration: none;
+  height: 60px;
+  width: 160;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.shop-menu-title {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+/*----------------------------------------------------------------------------------Additional Services*/
+
+.services h2 {
+  text-indent: -9999px;
+}
+
+.services-section-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+/*----------------------------------------------------------------------------------left side*/
+
+.services {
+  background-color: #F0F0F0;
+  padding: 40px 140px;
+}
+
+.services-list-wrapper {
+  height: 319px;
+  width: 280px;
+  border-right: 7px solid #000000;
+}
+
+.services-list {
+  list-style: none;
+  padding-top: 64px;
+}
+
+.services-item {
+  width: 160px;
+  height: 20px;
+  padding: 9px 120px 11px 0;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.services-item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+/*----------------------------------------------------------------------------------right side*/
+
+.services-tab-content {
+  width: 694px;
+  display: flex;
+}
+
+.services-header {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  margin-bottom: 34px;
+}
+
+.services-tab-content-text {
+  width: 448px;
+  color: #444444;
+  margin-right: 110px;
+}
+
+.services-description {
+  height: 90px;
+}
+
+
+/*----------------------------------------------------------------------------------About Shop*/
+.about-shop {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.about-shop h2 {
+  text-indent: -9999px;
+}
+
+/*----------------------------------------------------------------------------------long delivery button*/
+.long-button {
+  height: 100px;
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  border: none;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.long-button:hover {
+  cursor: pointer;
+}
+
+.long-button-list {
+  display: flex;
+  list-style: none;
+}
+
+.truck-icon-item {
+  width: 125px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  background-color: #FFE17F;
+}
+
+.truck-icon {
+  padding: 35px 39px 33.9px 39px;
+}
+
+.rare-delivery-link {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 40px 125px;
+  font-weight: 800;
+  font-family: 'Raleway';
+  line-height: 23px;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  width: 910px;
+  height: 20px;
+}
+
+.info-icon-item {
+  width: 125px;
+  height: 100px;
+}
+
+.info-icon {
+  padding: 30px 42.5px 30px 42.5px;
+}
+
+
+/*----------------------------------------------------------------------------------Two About Shop sections*/
+.index-columns-2 {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.about-company-wrapper {
+  width: 580px;
+}
+
+.fat-line {
+  height: 7px;
+  width: 84px;
+  background-color: #000000;
+  text-indent: -9999px;
+  margin-bottom: 40px;
+}
+
+.about-company-title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  margin-bottom: 48px;
+}
+
+.about-company-description,
+.shop-address {
+  margin-bottom: 30px;
+}
+
+.delivery-partners-list {
+  padding-left: 20px;
+  list-style: none;
+  margin-bottom: 21px;
+}
+
+.delivery-partners-item::before {
+  content: "\2022";
+  color: #FFC700;
+  font-weight: 900;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  margin-left: -1em;
+  margin-right: 26px;
+}
+
+.delivery-partners-item {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  padding-bottom: 19px;
+}
+
+.button-more {
+  text-decoration: none;
+  width: 220px;
+  height: 40px;
+  padding: 5px 10px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.shop-name {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.phone-number {
+  display: block;
+  color: #444444;
+}
+
+.open-hours-header {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.open-hours {
+  margin-bottom: 40px;
+}
+
+
+/*----------------------------------------------------------------------------------Newsletter subscription*/
+.email-subscription {
+  width: 1440px;
+  background-color: #F0F0F0;
+}
+
+.email-subscription-content {
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.email-susbcription-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 144px;
+}
+
+.email-subscription-header {
+  width: 348px;
+  height: 100px;
+  display: inline-block;
+  margin-right: 252px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.email-subscription-description {
+  width: 560px;
+  height: 90px;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.email-subscription-section {
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.subscription-form,
+.free {
+  display: inline;
+}
+
+.green-check {
+  font-weight: 800;
+  color: #08AF00;
+}
+
+.email-subscription-input {
+  width: 557px;
+  padding: 18px;
+  border: none;
+  border-bottom: solid 3px #C4C4C4;
+  background-color: #F0F0F0;
+}
+
+.subscribe-input {
+  font-family: 'Raleway';
+  font-style: 400;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  border: solid 3px #C4C4C4;
+}
+
+/*---------------------------End of Index Page Styles---------------------------*/
+
+
+
+/*---------------------------Catalog Page Styles---------------------------*/
+
+
+/*---------------------------End of Catalog Page Styles---------------------------*/
+
+
+/*----------------------------------------------------------------------------------Footer*/
+.page-footer h2 {
+  text-indent: -9999px;
+}
+
+.page-footer {
+  width: 1440px;
+  background-color: #444444;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.footer-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*----------------------------------------------------------------------------------left side*/
+.footer-left {
+  width: 239px;
+  height: 182px;
+  margin: 62px 119px 77px 0;
+}
+
+.footer-logo-pic {
+  margin-bottom: 35px;
+}
+
+.footer-decor {
+  width: 80px;
+  height: 7px;
+  background-color: #FFC700;
+  margin-top: 64px;
+}
+
+/*----------------------------------------------------------------------------------middle*/
+
+.footer-center {
+  width: 444px;
+  height: 123px;
+  text-align: center;
+  margin-top: 137px;
+  margin-bottom: 61px;
+}
+
+.footer-navigation-list,
+.social-media-list {
+  list-style: none;
+}
+
+.footer-navigation-list {
+  margin-bottom: 62px;
+}
+
+.footer-navigation-item,
+.social-media-item {
+  display: inline;
+}
+
+.footer-navigation-item a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.social-media-item a {
+  text-decoration: none;
+  color: #FFFFFF;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.social-link {
+  padding: 10px;
+}
+
+.social-media-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+/*----------------------------------------------------------------------------------right side*/
+
+.footer-right {
+  width: 175px;
+  height: 116px;
+  margin: 140px 0 65px 183px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-phone-number {
+  color: #FFFFFF;
+  margin-bottom: 63px;
+}
+/*----------------------------------------------------------------------------------The End :)*/
