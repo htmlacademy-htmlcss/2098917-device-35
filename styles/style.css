@@ -30,6 +30,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
@@ -38,6 +42,9 @@ body {
   line-height: 30px;
   background-color: #FFFFFF;
   color: #444444;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .container {
@@ -45,8 +52,16 @@ body {
   margin: 0 auto;
 }
 
-.hidden-my-way {
-  text-indent: -9999px;
+/*.visually-hidden */
+.hidden-my-way{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /*----------------------------------------------------------------------------------Header*/
 
@@ -55,24 +70,47 @@ body {
   width: 1440px;
 }
 
-.header-background-wrapper {
+.header-yellow-background-hide {
   width: 1160px;
   height: 186px;
   background-color:#FFE17F;
   left: 0;
   right: 0;
-  margin: 20px auto;
+  margin: 0 auto;
+  margin-top: 40px;
   text-indent: -9999px;
-  /*display: none;*/
+  display: none;
 }
 
-.transparent-header-menu-wrapper {
+.header-yellow-background-show {
+  width: 1160px;
+  height: 186px;
+  background-color:#FFE17F;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-indent: -9999px;
+}
+
+.transparent-header-menu-wrapper-index {
   width: 1040px;
   height: 186px;
   position: absolute;
   left: 0;
   right: 0;
   margin: 0 auto;
+  margin-top: 20px;
+}
+
+.transparent-header-menu-wrapper-catalog {
+  width: 1040px;
+  height: 186px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: -20px;
 }
 
 /*----------------------------------------------------------------------------------navigation*/
@@ -100,6 +138,14 @@ body {
   text-align: center;
 }
 
+.hide-account-name {
+  display: none;
+}
+
+.gray-state {
+
+}
+
 .navigation-link-bottom {
   text-decoration: none;
   color: #000000;
@@ -124,11 +170,16 @@ body {
 
 /*---------------------------Index Page Styles---------------------------*/
 
+.main-index {
+  flex-grow: 1;
+}
+
 /*----------------------------------------------------------------------------------Slider*/
 
 .slider {
   width: 1160px;
   margin: 0 auto;
+  margin-top: 40px;
 }
 
 .yellow-background {
@@ -529,7 +580,7 @@ li.shop-menu-item {
 
 /*---------------------------Catalog Page Styles---------------------------*/
 
-.main-catalog {
+.catalog-products {
   background-color: #F0F0F0;
 }
 
@@ -541,6 +592,11 @@ li.shop-menu-item {
   color: #000000;
 }
 
+.inner-header {
+  width: 1079px;
+  margin: 0 auto;
+}
+
 /*----------------------------------------------------------------------------------Breadcrumbs*/
 
 .breadcrumbs {
@@ -550,15 +606,28 @@ li.shop-menu-item {
   color: #000000;
 }
 
+.breadcrumbs-item {
+  display: inline;
+}
+
 .breadcrumbs-item a {
   color: inherit;
   text-decoration: none;
 }
 
+
+/*----------------------------------------------------------------------------------Producst section container*/
+
+.page-content-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+}
 /*----------------------------------------------------------------------------------Filters section*/
 
-.catalog-products h2 {
-  text-indent: -9999px;
+.filter-wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .section-name {
@@ -569,6 +638,10 @@ li.shop-menu-item {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+}
+
+.filter-wrapper h2 {
+  display: none;
 }
 
 .catalog-filter-title {
@@ -612,6 +685,12 @@ li.shop-menu-item {
 
 /*----------------------------------------------------------------------------------Sorting section*/
 
+.top-sorting {
+  width: 840px;
+  display:flex;
+  justify-content: space-between;
+}
+
 .sorting-container {
   color: #000000;
   background-color: #F0F0F0;
@@ -630,11 +709,19 @@ li.shop-menu-item {
 /*----------------------------------------------------------------------------------Product Cards*/
 
 .product-cards-wrapper {
-  background-color: #FFFFFF
+  background-color: #FFFFFF;
+  width: 840px;
+}
+
+.cards-container {
+  width: 760px;
+  margin: 0 auto;
 }
 
 .product-cards-list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product-card {
@@ -709,6 +796,10 @@ li.shop-menu-item {
 
 .pagination-forward {
   color: #000000;
+}
+
+.pagination-item {
+  display: inline;
 }
 /*---------------------------End of Catalog Page Styles---------------------------*/
 
