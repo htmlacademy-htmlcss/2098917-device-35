@@ -176,13 +176,24 @@ body {
 
 /*----------------------------------------------------------------------------------Slider*/
 
-.slider {
+
+.slider-section-wrapper {
   width: 1160px;
   margin: 0 auto;
   margin-top: 40px;
-  background: linear-gradient(to top,  #FFFFFF 0%,#FFFFFF 59%,#FFE17F 41%,#FFE17F 100%);
 }
 
+.slider {
+  margin-top: -300px;
+}
+
+.slider-yellow-background {
+  width: 1160px;
+  height: 300px;
+  background-color: #FFE17F;
+  text-indent: -9999px;
+
+}
 
 
 .yellow-background {
