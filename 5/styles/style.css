@@ -52,8 +52,7 @@ body {
   margin: 0 auto;
 }
 
-/*.visually-hidden */
-.hidden-my-way{
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -400,54 +399,44 @@ li.shop-menu-item {
   margin: 0 auto;
   margin-top: 70px;
   margin-bottom: 70px;
-  border: none;
   align-items: center;
-  flex-wrap: wrap;
+  display: flex;
+  background-color:#F0F0F0;;
+}
+
+.truck-icon-item {
+  width: 125px;
+  height: 100px;
+  background-color: #FFE17F;
+  border: none;
 }
 
 .long-button:hover {
   cursor: pointer;
 }
 
-.long-button-list {
-  display: flex;
-  list-style: none;
-}
-
-.truck-icon-item {
-  width: 125px;
-  height: 100px;
-  margin: 0;
-  padding: 0;
-  background-color: #FFE17F;
-}
-
-.truck-icon {
-  padding: 35px 39px 34px 39px;
+.long-button-content:hover {
+  cursor: pointer;
 }
 
 .rare-delivery-link {
+  width: 910px;
+  height: 20px;
+  border: none;
   text-transform: uppercase;
-  padding: 40px 125px;
   font-weight: 800;
   font-family: "Raleway", "Arial", sans-serif;
   line-height: 23px;
   font-size: 20px;
   text-align: center;
   letter-spacing: 0.2em;
-  width: 910px;
-  height: 20px;
 }
 
 .info-icon-item {
   width: 125px;
   height: 100px;
+  border: none;
 }
-
-.info-icon {
-  padding: 30px 43px 30px 43px;
-}
-
 
 /*----------------------------------------------------------------------------------Two About Shop sections*/
 .index-columns-2 {
