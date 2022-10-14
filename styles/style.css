@@ -106,6 +106,12 @@ body {
   flex-direction: column;
 }
 
+.always-visible-menu {
+  width: 1040px;
+  height: 186px;
+  position: absolute;
+  margin: 0 auto;
+}
 /*----------------------------------------------------------------------------------navigation*/
 .logo-link {
   display: block;
@@ -221,12 +227,12 @@ body {
 }
 
 .bottom-navigation-catalog-dropdown {
-  width: 1160px;
+  width: 1040px;
   height: 180px;
   display: flex;
   justify-content: flex-start;
   padding-top: 33px;
-  padding-left: 60px;
+  /* padding-left: 60px;*/
   background-color:#FFC700;
 }
 
