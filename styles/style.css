@@ -104,7 +104,13 @@ body {
 }
 
 /*----------------------------------------------------------------------------------navigation*/
-.top-navigation-form {
+.logo-link {
+  display: block;
+}
+
+.top-navigation-form,
+.search-bar-fieldset,
+.top-navigation {
   display: inline;
 }
 
@@ -120,6 +126,11 @@ body {
 
 .top-right-navigation-item, .top-left-navigation-item {
   display: inline;
+}
+
+.search-bar-fieldset {
+  width: 517px;
+  height: 40px;
 }
 
 .navigation-link-top {

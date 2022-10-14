@@ -11,51 +11,55 @@
   </head>
 
   <body>
-    <div class="container"> <!--container starts-->
-    <!--Header starts-->
-    <header class="page-header">
+    <div class="container"> <!--container start-->
+    <header class="page-header"> <!--Header start-->
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
 
         <div class="transparent-header-menu-wrapper">
-          <a href="index.html"><img class="logo" src="images/index/logo.svg" width="145" height="36" alt="Лого интернет-магазина Девайс"></a>
-          <nav class="top-navigation">
-            <form class="top-navigation-form">
-              <label class="top-navigation-search-label">
-                <input class="top-navigation-search-input" type="search" placeholder="Поиск по сайту">
-              </label>
-              <label class="top-navigation-button-label">
-                <input class="top-navigation-button-input" type="submit" value="Найти">
-              </label>
-            </form>
-            <ul class="top-left-navigation-list">
-              <li class="top-left-navigation-item">
-                <a href="#" class="navigation-link-top hide-account-name">
-                  <img src="images/index/enter.svg" width="13" height="12" alt="Вход в аккаунт">
-                  Коля Петухов
-                </a>
-              </li>
-              <li class="top-left-navigation-item">
-                <a href="#" class="navigation-link-top gray-state">
-                  <img src="images/index/enter.svg" width="13" height="12" alt="Вход в аккаунт">
-                  Войти
-                </a>
-              </li>
-            </ul>
-            <ul class="top-right-navigation-list">
-              <li class="top-right-navigation-item">
-                <a href="#" class="navigation-link-top">
-                  <img src="images/index/compare.svg" width="10" height="12" alt="Сравнение товаров">
-                  Сравнить
-                </a>
-              </li>
-              <li class="top-right-navigation-item">
-                <a href="#" class="navigation-link-top">
-                <img src="images/index/cart.svg" width="16" height="14" alt="Корзина">
-                Корзина
-                </a>
-              </li>
-            </ul>
+            <a href="index.html" class="logo-link"><img class="logo" src="images/index/logo.svg" width="145" height="36" alt="Лого интернет-магазина Девайс"></a>
+
+            <fieldset class="search-bar-fieldset">
+              <form class="top-navigation-form">
+                <label class="top-navigation-search-label">
+                  <input class="top-navigation-search-input" type="search" placeholder="Поиск по сайту">
+                </label>
+                <label class="top-navigation-button-label">
+                  <input class="top-navigation-button-input" type="submit" value="Найти">
+                </label>
+              </form>
+            </fieldset>
+
+            <nav class="top-navigation">
+              <ul class="top-left-navigation-list">
+                <li class="top-left-navigation-item">
+                  <a href="#" class="navigation-link-top hide-account-name">
+                    <img src="images/index/enter.svg" width="13" height="12" alt="Вход в аккаунт">
+                    Коля Петухов
+                  </a>
+                </li>
+                <li class="top-left-navigation-item">
+                  <a href="#" class="navigation-link-top gray-state">
+                    <img src="images/index/enter.svg" width="13" height="12" alt="Вход в аккаунт">
+                    Войти
+                  </a>
+                </li>
+              </ul>
+              <ul class="top-right-navigation-list">
+                <li class="top-right-navigation-item">
+                  <a href="#" class="navigation-link-top">
+                    <img src="images/index/compare.svg" width="10" height="12" alt="Сравнение товаров">
+                    Сравнить
+                  </a>
+                </li>
+                <li class="top-right-navigation-item">
+                  <a href="#" class="navigation-link-top">
+                  <img src="images/index/cart.svg" width="16" height="14" alt="Корзина">
+                  Корзина
+                  </a>
+                </li>
+              </ul>
           </nav>
+
           <nav class="bottom-navigation">
             <ul class="bottom-navigation-catalog">
               <li class="bottom-navigation-catalog-item">
@@ -91,13 +95,15 @@
               </li>
             </ul>
           </nav>
-        </div>
+
+        </div> <!--transparent-header-menu-wrapper end-->
+
         <div class="header-yellow-background-hide">Background</div>
-    </header>
-    <!--Header ends-->
+
+    </header>   <!--Header end-->
 
     <main class="main-index">
-      <!--Slider section starts-->
+      <!--Slider section start-->
       <!--Made following the Barbershop slider example-->
       <section class="slider-section-wrapper">
           <div class="slider-yellow-background">Background</div>
