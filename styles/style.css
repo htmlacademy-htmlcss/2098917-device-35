@@ -106,12 +106,6 @@ body {
   flex-direction: column;
 }
 
-.always-visible-menu {
-  width: 1040px;
-  height: 186px;
-  position: absolute;
-  margin: 0 auto;
-}
 /*----------------------------------------------------------------------------------navigation*/
 .logo-link {
   display: block;
@@ -275,11 +269,11 @@ body {
   color: #000000;
 }
 
-/*
+
 .bottom-navigation-catalog-dropdown {
   display: none;
 }
-*/
+
 
 /*---------------------------Index Page Styles---------------------------*/
 
@@ -415,6 +409,36 @@ li.shop-menu-item {
   display: block;
 }
 
+.vr-glasses-icon {
+  margin-left: 32px;
+  margin-top: 54px;
+}
+
+.selfie-stick-icon {
+  margin-left: 37px;
+  margin-top: 44px;
+}
+
+.action-camera-icon {
+  margin-left: 44px;
+  margin-top: 37px;
+}
+
+.fitness-bracelet-icon {
+  margin-left: 26px;
+  margin-top: 48px;
+}
+
+.smart-watch-icon {
+  margin-left: 52px;
+  margin-top: 32px;
+}
+
+.copter-icon {
+  margin-left: 14px;
+  margin-top: 46px;
+}
+
 .shop-menu-link {
   text-decoration: none;
   height: 60px;
@@ -432,28 +456,42 @@ li.shop-menu-item {
 }
 
 /*----------------------------------------------------------------------------------Additional Services*/
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ /* padding: 40px 140px;*/
+}
 
-.services-section-wrapper {
+.servises-section-wrapper {
   width: 1160px;
+  position: absolute;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.grey-background {
+  width: 1440px;
+  height: 289px;
+  background-color: #F0F0F0;
+  margin-top: 102px;
+  color: #F0F0F0;;
 }
 
 /*----------------------------------------------------------------------------------left side*/
-
-.services {
-  background-color: #F0F0F0;
-  padding: 40px 140px;
-}
-
 .services-list-wrapper {
+  display: flex;
+  align-items: center;
   height: 319px;
-  width: 280px;
   border-right: 7px solid #000000;
+  margin-right: 116px;
 }
 
 .services-list {
   list-style: none;
-  padding-top: 64px;
 }
 
 .services-item {
@@ -474,11 +512,19 @@ li.shop-menu-item {
   margin-bottom: 35px;
 }
 
+
 /*----------------------------------------------------------------------------------right side*/
 
-.services-tab-content {
-  width: 694px;
+.services-tab-wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-tab-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .services-header {
@@ -493,12 +539,24 @@ li.shop-menu-item {
 .services-tab-content-text {
   width: 448px;
   margin-right: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.first-tab {
+  display: none;
 }
 
-.services-description {
-  height: 90px;
+.second-tab{
+  display: none;
+}
+/*
+.third-tab {
+  display: none;
 }
 
+
+*/
 
 /*----------------------------------------------------------------------------------About Shop*/
 .about-shop {
@@ -1010,6 +1068,8 @@ li.shop-menu-item {
 }
 
 .footer-navigation-list {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 62px;
 }
 

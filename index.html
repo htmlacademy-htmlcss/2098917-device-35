@@ -12,101 +12,104 @@
 
   <body>
     <div class="container"> <!--container start-->
-    <header class="page-header"> <!--Header start-->
+    <header class="page-header">
+      <!--Header start-->
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
 
-        <div class="transparent-header-menu-wrapper">
-          <div class="always-visible-menu">
-            <a href="index.html" class="logo-link"><img class="logo" src="images/index/logo.svg" width="145" height="36" alt="Лого интернет-магазина Девайс"></a>
-            <div class="user-menu-wrapper">
-              <fieldset class="search-bar-fieldset">
-                <form class="top-navigation-form">
-                  <label class="top-navigation-search-label">
-                    <input class="top-navigation-search-input" type="search" placeholder="Поиск по сайту">
-                  </label>
-                  <label class="top-navigation-button-label">
-                    <input class="top-navigation-button-input" type="submit" value="Найти">
-                  </label>
-                </form>
-              </fieldset>
+      <div class="transparent-header-menu-wrapper">
 
-              <nav class="top-navigation">
-                <ul class="top-left-navigation-list">
-                  <li class="top-left-navigation-item hide-account-name">
-                    <a href="#" class="navigation-link-top">
-                      <img src="images/index/enter.svg" width="13" height="12" alt="Вход в аккаунт">
-                      Коля Петухов
-                    </a>
-                  </li>
-                  <li class="top-left-navigation-item">
-                    <a href="#" class="navigation-link-top gray-state">
-                      <img src="images/index/enter.svg" width="13" height="12" alt="Вход в аккаунт">
-                      Войти
-                    </a>
-                  </li>
-                </ul>
-                <ul class="top-right-navigation-list">
-                  <li class="top-right-navigation-item">
-                    <a href="#" class="navigation-link-top">
-                      <img src="images/index/compare.svg" width="10" height="12" alt="Сравнение товаров">
-                      Сравнить
-                    </a>
-                  </li>
-                  <li class="top-right-navigation-item">
-                    <a href="#" class="navigation-link-top">
-                    <img src="images/index/cart.svg" width="16" height="14" alt="Корзина">
-                    Корзина
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+        <a href="index.html" class="logo-link"><img class="logo" src="images/index/logo.svg" width="145" height="36"
+            alt="Лого интернет-магазина Девайс"></a>
+        <div class="user-menu-wrapper">
+          <fieldset class="search-bar-fieldset">
+            <form class="top-navigation-form">
+              <label class="top-navigation-search-label">
+                <input class="top-navigation-search-input" type="search" placeholder="Поиск по сайту">
+              </label>
+              <label class="top-navigation-button-label">
+                <input class="top-navigation-button-input" type="submit" value="Найти">
+              </label>
+            </form>
+          </fieldset>
 
-          <nav class="bottom-navigation">
-            <ul class="bottom-navigation-catalog">
-              <li class="bottom-navigation-catalog-item">
-                <a class="navigation-link-bottom" href="#">каталог товаров
-                  <span class="catalog-icon">+</span>
+          <nav class="top-navigation">
+            <ul class="top-left-navigation-list">
+              <li class="top-left-navigation-item hide-account-name">
+                <a href="#" class="navigation-link-top">
+                  <img src="images/index/enter.svg" width="13" height="12" alt="Вход в аккаунт">
+                  Коля Петухов
+                </a>
+              </li>
+              <li class="top-left-navigation-item">
+                <a href="#" class="navigation-link-top gray-state">
+                  <img src="images/index/enter.svg" width="13" height="12" alt="Вход в аккаунт">
+                  Войти
                 </a>
               </li>
             </ul>
+            <ul class="top-right-navigation-list">
+              <li class="top-right-navigation-item">
+                <a href="#" class="navigation-link-top">
+                  <img src="images/index/compare.svg" width="10" height="12" alt="Сравнение товаров">
+                  Сравнить
+                </a>
+              </li>
+              <li class="top-right-navigation-item">
+                <a href="#" class="navigation-link-top">
+                  <img src="images/index/cart.svg" width="16" height="14" alt="Корзина">
+                  Корзина
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <nav class="bottom-navigation">
+          <ul class="bottom-navigation-catalog">
+            <li class="bottom-navigation-catalog-item">
+              <a class="navigation-link-bottom" href="#">каталог товаров
+                <span class="catalog-icon">+</span>
+              </a>
+            </li>
+          </ul>
+          <!--more info: 9.1 поповер focus-within-->
+
+
+          <ul class="bottom-right-navigation-list">
+            <li class="bottom-right-navigation-item">
+              <a href="#" class="navigation-link-bottom">доставка</a>
+            </li>
+            <li class="bottom-right-navigation-item">
+              <a href="#" class="navigation-link-bottom">гарантия</a>
+            </li>
+            <li class="bottom-right-navigation-item">
+              <a href="#" class="navigation-link-bottom">контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="bottom-navigation-catalog-dropdown">
+          <ul class="dropdown-1">
             <!--more info: 9.1 поповер focus-within-->
+            <li class="dropdown-1-item"><a href="#" class="inner-navigation-link-bottom">Виртуальная реальность</a></li>
+            <li class="dropdown-1-item"><a href="catalog.html" class="inner-navigation-link-bottom">Моноподы</a></li>
+            <li class="dropdown-1-item"><a href="#" class="inner-navigation-link-bottom">Экшн-камеры</a></li>
+          </ul>
+          <ul class="dropdown-2">
+            <li class="dropdown-2-item"><a href="#" class="inner-navigation-link-bottom">Фитнес-браслеты</a></li>
+            <li class="dropdown-2-item"><a href="#" class="inner-navigation-link-bottom">Умные часы</a></li>
+          </ul>
+          <ul class="dropdown-3">
+            <li class="dropdown-3-item"><a href="#" class="inner-navigation-link-bottom">Квадрокоптеры</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--transparent-header-menu-wrapper end-->
 
+      <div class="header-yellow-background-hide">Background</div>
 
-            <ul class="bottom-right-navigation-list">
-              <li class="bottom-right-navigation-item">
-                <a href="#" class="navigation-link-bottom">доставка</a>
-              </li>
-              <li class="bottom-right-navigation-item">
-                <a href="#" class="navigation-link-bottom">гарантия</a>
-              </li>
-              <li class="bottom-right-navigation-item">
-                <a href="#" class="navigation-link-bottom">контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <nav class="bottom-navigation-catalog-dropdown">
-            <ul class="dropdown-1">
-              <!--more info: 9.1 поповер focus-within-->
-              <li class="dropdown-1-item"><a href="#" class="inner-navigation-link-bottom">Виртуальная реальность</a></li>
-              <li class="dropdown-1-item"><a href="catalog.html" class="inner-navigation-link-bottom">Моноподы</a></li>
-              <li class="dropdown-1-item"><a href="#" class="inner-navigation-link-bottom">Экшн-камеры</a></li>
-            </ul>
-            <ul class="dropdown-2">
-              <li class="dropdown-2-item"><a href="#" class="inner-navigation-link-bottom">Фитнес-браслеты</a></li>
-              <li class="dropdown-2-item"><a href="#" class="inner-navigation-link-bottom">Умные часы</a></li>
-            </ul>
-            <ul class="dropdown-3">
-              <li class="dropdown-3-item"><a href="#" class="inner-navigation-link-bottom">Квадрокоптеры</a></li>
-            </ul>
-          </nav>
-        </div><!--Always Visible Menu-->
-
-        </div> <!--transparent-header-menu-wrapper end-->
-
-        <div class="header-yellow-background-hide">Background</div>
-
-    </header>   <!--Header end-->
+    </header>
+    <!--Header end-->
 
     <main class="main-index">
       <!--Slider section start-->
@@ -194,7 +197,7 @@
           <li class="shop-menu-item">
             <a class="shop-menu-link" href="#">
               <span class="yellow-box">
-                <img class="yellow-box-icon" src="images/index/vr-glasses.svg" width="97" height="55" alt="очки виртуальной реальности">
+                <img class="yellow-box-icon vr-glasses-icon" src="images/index/vr-glasses.svg" width="97" height="55" alt="очки виртуальной реальности">
               </span>
               <h3 class="shop-menu-title">Виртуальная реальность</h3>
             </a>
@@ -253,6 +256,7 @@
       <!--Made following this tutorial: https://www.youtube.com/watch?v=5L6h_MrNvsk -->
       <section class="services">
         <h2 class="visually-hidden">Дополнительные услуги интернет-магазина Девайс</h2>
+
         <div class="servises-section-wrapper">
           <div class="services-list-wrapper">
             <ul class="services-list">
@@ -264,7 +268,7 @@
 
           <div class="services-content-wrapper">
             <div class="services-tab-wrapper">
-              <div class="services-tab-content" id="delivery">
+              <div class="services-tab-content first-tab" id="delivery">
                 <div class="services-tab-content-text">
                   <h3 class="services-header">Доставка</h3>
                   <p class="services-description">
@@ -278,7 +282,7 @@
                 </div>
               </div>
 
-              <div class="services-tab-content" id="guarantee">
+              <div class="services-tab-content second-tab" id="guarantee">
                 <div class="services-tab-content-text">
                   <h3 class="services-header">Гарантия</h3>
                   <p class="services-description">
@@ -292,7 +296,7 @@
                 </div>
               </div>
 
-              <div class="services-tab-content" id="credit">
+              <div class="services-tab-content third-tab" id="credit">
                 <div class="services-tab-content-text">
                   <h3 class="services-header">Кредит</h3>
                   <p class="services-description">
@@ -310,6 +314,7 @@
             </div>
           </div>
         </div>
+        <div class="grey-background">Grey background</div>
       </section>
       <!--Tab switcher section ends-->
 
@@ -419,17 +424,17 @@
           <div class="footer-social-media">
             <ul class="social-media-list">
               <li class="social-media-item">
-                <a href="#" class="social-link visually-hidden">
+                <a href="#" class="social-link">
                 <img src="images/index/social-telegram.svg" height="11" width="13" alt="Телеграм">
                 </a>
               </li>
               <li class="social-media-item">
-                <a href="#" class="social-link visually-hidden">
+                <a href="#" class="social-link">
                   <img src="images/index/social-youtube.svg" height="11" width="16" alt="YouTube">
                 </a>
               </li>
               <li class="social-media-item">
-                <a href="#" class="social-link visually-hidden">
+                <a href="#" class="social-link">
                   <img src="images/index/social-twitter.svg" height="14" width="15" alt="Twitter">
                 </a>
               </li>
