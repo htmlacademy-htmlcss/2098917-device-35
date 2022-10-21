@@ -23,6 +23,7 @@
               <div class="user-menu-wrapper">
                 <fieldset class="search-bar-fieldset">
                   <form class="top-navigation-form">
+
                     <label class="top-navigation-search-label">
                       <input class="top-navigation-search-input" type="search" placeholder="Поиск по сайту">
                     </label>
@@ -36,13 +37,13 @@
                   <ul class="top-left-navigation-list">
                     <li class="top-left-navigation-item hide-account-name">
                       <a href="#" class="navigation-link-top">
-                        <img src="images/index/enter.svg" width="13" height="12" alt="Вход в аккаунт">
+                        <img src="images/index/enter.svg" class="user-menu-icon" width="13" height="12" alt="Вход в аккаунт">
                         Коля Петухов
                       </a>
                     </li>
                     <li class="top-left-navigation-item">
                       <a href="#" class="navigation-link-top gray-state">
-                        <img src="images/index/enter.svg" width="13" height="12" alt="Вход в аккаунт">
+                        <img src="images/index/enter.svg" class="user-menu-icon" width="13" height="12" alt="Вход в аккаунт">
                         Войти
                       </a>
                     </li>
@@ -50,13 +51,13 @@
                   <ul class="top-right-navigation-list">
                     <li class="top-right-navigation-item">
                       <a href="#" class="navigation-link-top">
-                        <img src="images/index/compare.svg" width="10" height="12" alt="Сравнение товаров">
+                        <img src="images/index/compare.svg" class="user-menu-icon" width="10" height="12" alt="Сравнение товаров">
                         Сравнить
                       </a>
                     </li>
                     <li class="top-right-navigation-item">
                       <a href="#" class="navigation-link-top">
-                        <img src="images/index/cart.svg" width="16" height="14" alt="Корзина">
+                        <img src="images/index/cart.svg" class="user-menu-icon" width="16" height="14" alt="Корзина">
                         Корзина
                       </a>
                     </li>
@@ -67,8 +68,10 @@
               <nav class="bottom-navigation">
                 <ul class="bottom-navigation-catalog">
                   <li class="bottom-navigation-catalog-item">
-                    <a class="navigation-link-bottom" href="#">каталог товаров
-                      <span class="catalog-icon">+</span>
+                    <a class="navigation-link-bottom-dropdown" href="#">каталог товаров
+                      <span class="catalog-icon">
+                        <svg class="catalog-svg" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" fill="#000"/></svg>
+                      </span>
                     </a>
                   </li>
                 </ul>
