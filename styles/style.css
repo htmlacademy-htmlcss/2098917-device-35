@@ -95,7 +95,20 @@ body {
   margin-bottom: 35px;
   text-indent: -9999px;
 }
+.transparent-header-menu-wrapper {
+  position: absolute;
+  margin-top: 20px;
+}
 
+.always-visible-part {
+  width: 1040px;
+  /*height: 186px;*/
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/*
 .transparent-header-menu-wrapper {
   width: 1040px;
   height: 186px;
@@ -105,10 +118,12 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+*/
 /*----------------------------------------------------------------------------------navigation*/
 .logo-link {
   display: block;
+  width: 1040px;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -152,7 +167,6 @@ body {
   border-radius: 50px 0 0 50px;
   background: none;
   padding: 10px;
-  /*margin-right: -7px;*/
   border-right: none;
   }
 
@@ -194,7 +208,6 @@ body {
   width: 1040px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
 }
 
 .bottom-navigation-catalog,
@@ -227,13 +240,13 @@ body {
 }
 
 .bottom-navigation-catalog-dropdown {
-  width: 1040px;
+  width: 1100px;
   height: 180px;
   display: flex;
   justify-content: flex-start;
+  padding-left: 60px;
   padding-top: 33px;
-  /* padding-left: 60px;*/
-  background-color:#FFC700;
+  background-color:#FFE17F;
 }
 
 .dropdown-1,
@@ -279,6 +292,7 @@ body {
 .bottom-navigation-catalog-dropdown {
   display: none;
 }
+
 
 
 /*---------------------------Index Page Styles---------------------------*/
