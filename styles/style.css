@@ -97,6 +97,7 @@ body {
 }
 .transparent-header-menu-wrapper {
   position: absolute;
+  margin: 0 auto;
   margin-top: 20px;
   z-index: 1;
 }
