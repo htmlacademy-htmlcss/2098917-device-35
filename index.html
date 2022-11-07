@@ -34,15 +34,16 @@
         <div class="transparent-header-menu-wrapper">
           <a href="index.html" class="logo-link"><img class="logo" src="images/index/logo.svg" width="145" height="36"
               alt="Лого интернет-магазина Девайс"></a>
+
           <div class="always-visible-part">
             <div class="user-menu-wrapper">
               <fieldset class="search-bar-fieldset">
                 <form class="top-navigation-form">
-                  <label class="top-navigation-search-label">
-                    <input class="top-navigation-search-input" type="search" placeholder="Поиск по сайту">
+                  <label class="top-navigation-search-label" tabindex="0">
+                    <input class="top-navigation-search-input" type="search" placeholder="Поиск по сайту" tabindex="-1">
                   </label>
-                  <label class="top-navigation-button-label">
-                    <input class="top-navigation-button-input" type="submit" value="Найти">
+                  <label class="top-navigation-button-label" tabindex="0">
+                    <input class="top-navigation-button-input" type="submit" value="Найти" tabindex="-1">
                   </label>
                 </form>
               </fieldset>
@@ -119,23 +120,20 @@
                   </li>
                 </ul>
               </nav>
-            </div>
-            <!--End of user-menu-wrapper-->
+            </div> <!--End of user-menu-wrapper-->
 
             <nav class="bottom-navigation">
               <ul class="bottom-navigation-catalog">
                 <li class="bottom-navigation-catalog-item">
                   <a class="navigation-link-bottom-dropdown" href="#">каталог товаров
-                    <span class="catalog-closed"></span>
-                    <!--Change to .catalog-open to change ONLY icon form(!)-->
+                    <span class="catalog-closed"></span> <!--Change to .catalog-open to change ONLY icon form(!)-->
                   </a>
                 </li>
                 <li class="bottom-navigation-catalog-item">
                   <nav class="bottom-navigation-catalog-dropdown">
                     <ul class="dropdown-1">
                       <li class="dropdown-1-item"><a href="#" class="inner-navigation-link-bottom">Виртуальная
-                          реальность</a></li>
-                      <!--Add .dropdown-active class to make it active-->
+                          реальность</a></li>                      <!--Add .dropdown-active class to make it active-->
                       <li class="dropdown-1-item"><a href="catalog.html" class="inner-navigation-link-bottom">Моноподы</a>
                       </li>
                       <li class="dropdown-1-item"><a href="#" class="inner-navigation-link-bottom">Экшн-камеры</a></li>
@@ -255,8 +253,8 @@
 
           <ul class="shop-menu-list">
 
-            <li class="shop-menu-item">
-              <a class="shop-menu-link" href="#">
+            <li class="shop-menu-item" tabindex="0">
+              <a class="shop-menu-link" href="#" tabindex="-1">
                 <span class="yellow-box">
                   <img class="yellow-box-icon vr-glasses-icon" src="images/index/vr-glasses.svg" width="97" height="55"
                     alt="очки виртуальной реальности">
@@ -265,8 +263,8 @@
               </a>
             </li>
 
-            <li class="shop-menu-item">
-              <a class="shop-menu-link" href="catalog.html">
+            <li class="shop-menu-item" tabindex="0">
+              <a class="shop-menu-link" href="catalog.html" tabindex="-1">
                 <span class="yellow-box">
                   <img class="selfie-stick-icon" src="images/index/selfie-stick.svg" width="86" height="117"
                     alt="мобильный телефон в моноподе">
@@ -275,8 +273,8 @@
               </a>
             </li>
 
-            <li class="shop-menu-item">
-              <a class="shop-menu-link" href="#">
+            <li class="shop-menu-item" tabindex="0">
+              <a class="shop-menu-link" href="#" tabindex="-1">
                 <span class="yellow-box">
                   <img class="action-camera-icon" src="images/index/action-cam.svg" width="71" height="87" alt="экшн-камера">
                 </span>
@@ -284,8 +282,8 @@
               </a>
             </li>
 
-            <li class="shop-menu-item">
-              <a class="shop-menu-link" href="#">
+            <li class="shop-menu-item" tabindex="0">
+              <a class="shop-menu-link" href="#" tabindex="-1">
                 <span class="yellow-box">
                   <img class="fitness-bracelet-icon" src="images/index/fitness-watch.svg" width="107" height="65"
                     alt="фитнес-браслет">
@@ -294,8 +292,8 @@
               </a>
             </li>
 
-            <li class="shop-menu-item">
-              <a class="shop-menu-link" href="#">
+            <li class="shop-menu-item" tabindex="0">
+              <a class="shop-menu-link" href="#" tabindex="-1">
                 <span class="yellow-box">
                   <img class="smart-watch-icon" src="images/index/smart-watch.svg" width="56" height="98" alt="умные часы">
                 </span>
@@ -303,8 +301,8 @@
               </a>
             </li>
 
-            <li class="shop-menu-item">
-              <a class="shop-menu-link" href="#">
+            <li class="shop-menu-item" tabindex="0">
+              <a class="shop-menu-link" href="#" tabindex="-1">
                 <span class="yellow-box">
                   <img class="copter-icon" src="images/index/copter.svg" width="132" height="69" alt="квадрокоптер">
                 </span>
@@ -481,12 +479,15 @@
 
             <div class="email-subscription-section">
               <form class="subscription-form">
+
                 <label class="email-subscription-label">
                   <input class="email-subscription-input" type="email" placeholder="Ваш e-mail" size="80">
                 </label>
+
                 <label class="subscribe-label">
                   <input class="subscribe-input" type="submit" value="подписаться">
                 </label>
+
               </form>
               <p class="free"><span class="green-check">&#10004; </span> Это бесплатно</p>
             </div>
@@ -528,32 +529,38 @@
               <ul class="social-media-list">
                 <li class="social-media-item">
                   <a href="#" class="social-link">
-                    <svg class="social-media-icon" width="14" height="12" viewBox="0 0 14 12" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M12.44.07.62 4.63c-.8.33-.8.78-.14.98l3.03.94 7.02-4.43c.33-.2.64-.09.39.13l-5.7 5.13-.2 3.13c.3 0 .44-.14.61-.3l1.48-1.44 3.06 2.27c.57.31.97.15 1.12-.53l2-9.48c.21-.83-.3-1.2-.85-.96Z"
-                        fill="#444" />
-                    </svg>
+                    <span class="social-round-back">
+                      <svg class="social-media-icon" width="14" height="12" viewBox="0 0 14 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M12.44.07.62 4.63c-.8.33-.8.78-.14.98l3.03.94 7.02-4.43c.33-.2.64-.09.39.13l-5.7 5.13-.2 3.13c.3 0 .44-.14.61-.3l1.48-1.44 3.06 2.27c.57.31.97.15 1.12-.53l2-9.48c.21-.83-.3-1.2-.85-.96Z"
+                          fill="#444" />
+                      </svg>
+                    </span>
                   </a>
                 </li>
                 <li class="social-media-item">
                   <a href="#" class="social-link">
+                    <span class="social-round-back">
                     <svg class="social-media-icon" width="16" height="11" viewBox="0 0 16 11" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M15.667 1.675a1.857 1.857 0 0 0-.51-.847 2.034 2.034 0 0 0-.893-.495c-1.252-.33-6.268-.33-6.268-.33a51.083 51.083 0 0 0-6.26.314 2.107 2.107 0 0 0-.892.506c-.246.238-.425.53-.518.851A19.393 19.393 0 0 0 0 5.337C-.008 6.564.101 7.79.326 8.999c.091.32.27.611.516.846.248.236.556.406.894.496 1.27.329 6.26.329 6.26.329 2.094.024 4.188-.08 6.268-.313.335-.087.642-.257.892-.495.244-.23.42-.524.51-.847.23-1.207.342-2.434.334-3.663a17.72 17.72 0 0 0-.333-3.678ZM6.402 7.619V3.055l4.173 2.282L6.402 7.62Z"
                         fill="#444" />
                     </svg>
+                  </span>
                   </a>
                 </li>
                 <li class="social-media-item">
                   <a href="#" class="social-link">
+                    <span class="social-round-back">
                     <svg class="social-media-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M9.7.16c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4C1 5.26-.2 2.36.8.86c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"
                         fill="#444" />
                     </svg>
+                  </span>
                   </a>
                 </li>
               </ul>
@@ -569,8 +576,7 @@
               </svg></a>
           </div>
         </div>
-      </div>
-      <!--End of footer wrapper-->
+      </div> <!--End of footer wrapper-->
     </footer>
 
     <div class="modal-container modal-container-close">
