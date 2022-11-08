@@ -162,6 +162,16 @@ body {
   display: flex;
 }
 
+.top-navigation-search-label {
+  width: 359px;
+  height: 40px;
+}
+
+.top-navigation-search-label:focus-visible {
+  outline: solid 2px #AF4FFF;
+  outline-offset: 1px;
+}
+
 .top-navigation-search-input {
   width: 359px;
   height: 40px;
@@ -179,11 +189,20 @@ body {
   color: #000000;
 }
 
+.top-navigation-search-input:focus {
+  outline: none;
+}
+
 .top-navigation-search-input:disabled {
   opacity: 0.3;
 }
 
-.top-navigation-search-input:focus-visible {
+.top-navigation-button-label {
+  width: 160px;
+  height: 40px;
+}
+
+.top-navigation-button-label:focus {
   outline: solid 2px #AF4FFF;
   outline-offset: 1px;
 }
@@ -885,9 +904,13 @@ li.shop-menu-item {
   opacity: 0.3;
 }
 
-.shop-menu-link:focus-visible + .yellow-box {
+.shop-menu-item:focus-visible {
   outline: solid 2px #AF4FFF;
   outline-offset: 1px;
+}
+
+.shop-menu-link:focus-visible {
+  outline: none;
 }
 
 .shop-menu-title {
@@ -1317,33 +1340,33 @@ Tab visibility toggle:
 
 .subscription-form {
   display: flex;
-  align-items: flex-end;
-}
-
-.green-check {
-  font-weight: 800;
-  color: #08AF00;
 }
 
 .email-subscription-input {
   height: 55px;
-  width: 541px;
+  width: 540px;
   border: none;
   border-bottom: solid 3px #C4C4C4;
   background-color: #F0F0F0;
   padding-left: 16px;
+  padding-right: 16px;
   font-family: "Rubik", "Arial", sans-serif;;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color:rgba(68, 68, 68, 0.5);
+  color: #444444;
+}
+
+.email-subscription-input::placeholder {
+  color: #A2A2A2;
+  opacity: 1;
 }
 
 .email-subscription-input:focus-visible {
   outline: solid 2px #AF4FFF;
   outline-offset: 1px;
-  background-color: #DCDCDC
+  background-color: #DCDCDC;
 }
 
 .email-subscription-input:invalid {
@@ -1351,7 +1374,7 @@ Tab visibility toggle:
 }
 
 .email-subscription-input:disabled {
-
+  opacity: 0.3;
 }
 
 .subscribe-input {
@@ -1388,6 +1411,11 @@ Tab visibility toggle:
 
 .subscription-form:disabled {
   opacity: 0.3;
+}
+
+.green-check {
+  font-weight: 800;
+  color: #08AF00;
 }
 
 /*---------------------------End of Index Page Styles---------------------------*/
@@ -1472,8 +1500,6 @@ Tab visibility toggle:
   justify-content: center;
 }
 
-
-
 .catalog-section-wrapper {
   background-color: #FFFFFF;
   width: 840px;
@@ -1538,7 +1564,7 @@ Tab visibility toggle:
 .range-scale {
   position: relative;
   height: 2px;
-  margin-bottom: 11px;
+  margin-bottom: 13px;
   background-color: #AAAAAA;
 }
 
@@ -1550,6 +1576,15 @@ Tab visibility toggle:
 
 .range-toggle {
   position: absolute;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.round-toggle {
+  position: absolute;
   width: 18px;
   height: 18px;
   background: #EBEBEB;
@@ -1558,28 +1593,38 @@ Tab visibility toggle:
   cursor: pointer;
 }
 
-.range-toggle:hover {
+.min {
+  top: 0;
+  left: 0;
+}
+
+.max {
+  top: 0;
+  right: 0;
+}
+
+.round-toggle:hover {
   background: #EBEBEB;
   border: 2px solid #AAAAAA;
 }
 
-.range-toggle:active {
+.round-toggle:active {
   opacity: 1;
   background: #000000;
   border: 2px solid #000000;
 }
 
-.range-toggle:focus {
+.range-toggle:focus-visible {
   outline: solid 2px #AF4FFF;
 }
 
 .toggle-min {
-  top: -8px;
+  top: -10px;
   left: -6px;
 }
 
 .toggle-max {
-  top: -8px;
+  top: -10px;
   right: -6px;
 }
 
@@ -1598,7 +1643,12 @@ Tab visibility toggle:
   line-height: 20px;
   text-align: center;
   font-size: 14px;
-  opacity: 0.3;
+  color: #B3B3B3;
+}
+
+.catalog-filter-label:focus-visible {
+  outline: solid 2px #AF4FFF;
+  outline-offset: 1px;
 }
 
 .range-input {
@@ -1611,7 +1661,7 @@ Tab visibility toggle:
   background-color: transparent;
   border: none;
   appearance: textfield;
-
+  color: #B3B3B3;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1621,8 +1671,7 @@ Tab visibility toggle:
 }
 
 /*----------------------------------------------------------------------------------Other Filters*/
-.control,
-.catalog-filter-label {
+.control {
   font-size: 16px;
   color: #000000;
 }
@@ -1870,6 +1919,11 @@ Tab visibility toggle:
   background-color: #FFFFFF;
   position: relative;
   transition: .5s ease;
+}
+
+.product-card:focus-visible {
+  outline: solid 2px #AF4FFF;
+  outline-offset: 2px;
 }
 
 .product-card-image {
@@ -2258,11 +2312,21 @@ Tab visibility toggle:
   width: 40px;
   justify-content: center;
   align-items: center;
+ /*  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;*/
+}
+
+.social-round-back {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
 }
 
-.social-link:hover {
+.social-link:hover .social-round-back {
   background-color: #FFC700;
   opacity: 1;
 }
