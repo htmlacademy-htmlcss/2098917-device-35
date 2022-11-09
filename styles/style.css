@@ -138,7 +138,7 @@ body {
 .top-left-navigation-list {
   list-style: none;
   display: flex;
-  width: 230px;
+  min-width: 230px;
   margin-right: 26px;
 }
 
@@ -1512,10 +1512,14 @@ Tab visibility toggle:
 /*----------------------------------------------------------------------------------Filters section*/
 
 .filter-wrapper {
-  width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.catalog-filter {
+  width: 200px;
+  margin-right: 60px;
 }
 
 .section-name {
@@ -1689,6 +1693,7 @@ Tab visibility toggle:
 
 .control {
   position: relative;
+  max-width: 320px;
 }
 
 .control:hover {
