@@ -1197,7 +1197,7 @@ li.shop-menu-item {
 }
 
 .about-company-description {
-  width: 497px;
+  /*width: 497px;*/
   margin-bottom: 30px;
 }
 
@@ -2014,6 +2014,10 @@ li.shop-menu-item {
 }
 
 .product-card:hover .product-card-link {
+  opacity: 0.5;
+}
+
+.product-card:hover .card-name-price-box .product-card-title {
   opacity: 0.5;
 }
 
