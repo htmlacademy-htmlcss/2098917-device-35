@@ -242,9 +242,14 @@ body {
   opacity: 0.3;
 }
 
+
 .user-menu-icon {
   margin-right: 3px;
   margin-top: 6px;
+}
+
+.user-menu-icon-hide {
+  display: none;
 }
 
 .navigation-link-top {
@@ -606,6 +611,11 @@ body {
 
 .slider-image {
   margin-top: 150px;
+  display: none;
+}
+
+.slider-image-active {
+  display: block;
 }
 
 .slider-controls {
@@ -648,21 +658,24 @@ body {
   transform: rotate(180deg);
 }
 
-
 .information {
   width: 560px;
+  display: none;
+}
+
+.information-active {
+  display: block;
 }
 
 .big-number {
   width: 250px;
   height: 135px;
-  font-weight: 700;
-  font-size: 180px;
-  color: #FFFFFF;
   margin-top: 179px;
   margin-left: 261px;
-  text-align: end;
+  display: flex;
+  justify-content: flex-end;
 }
+
 
 .button-more {
   display: flex;
@@ -724,6 +737,15 @@ body {
   color: #000000;
   margin-top: -43px;
   margin-bottom: 29px;
+  box-sizing: border-box;
+}
+
+.description-two {
+  width: 287px;
+}
+
+.description-three {
+  width: 437px;
 }
 
 .slide-long-description {
@@ -737,7 +759,7 @@ body {
 }
 
 .slide-details:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .slide-details-1 {
@@ -860,6 +882,11 @@ li.shop-menu-item {
   margin-bottom: 33px;
 }
 
+.vr-glasses-back {
+  background: transparent url("data:image/svg+xml,%3Csvg width='97' height='55' viewBox='0 0 97 55' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M84.1314 32.639V20.003C84.1314 18.694 85.1764 17.633 86.4664 17.633L94.7924 19.214V11.02C94.7924 8.66497 93.0844 7.58897 90.5904 6.75497L67.4034 0.174968C69.0194 1.56597 69.2924 2.21497 69.2924 4.57097V49.78C69.2924 52.136 68.8424 53.846 67.3254 54.99L90.5904 47.925C92.9914 47.092 94.7924 43.709 94.7924 41.353V33.44L86.4664 35.007C85.1764 35.009 84.1314 33.947 84.1314 32.639Z' fill='%23363636'/%3E%3Cpath d='M95.1294 20.979L87.5314 19.535C86.5234 19.535 85.7074 20.364 85.7074 21.386V31.254C85.7074 32.277 86.5234 33.106 87.5314 33.106L95.1294 31.675C96.2834 31.256 96.9534 30.846 96.9534 29.823V22.83C96.9534 21.808 96.1874 21.323 95.1294 20.979Z' fill='%23363636'/%3E%3Cpath d='M67.1704 4.48297C67.1704 -0.597033 62.9384 0.0239677 62.9384 0.0239677C62.9384 0.0239677 5.83241 4.73797 2.83841 5.14497C-0.155585 5.55197 0.00141458 9.53197 0.00141458 9.53197C0.00141458 9.53197 0.000414578 42.069 0.000414578 45.812C0.000414578 49.555 2.59941 49.565 2.59941 49.565L19.0764 50.968L27.2124 39.3C27.2124 39.3 28.3214 37.472 29.7174 37.472C31.1144 37.472 32.1494 39.333 32.1494 39.333L41.2104 52.854C41.2104 52.854 60.1054 54.763 63.7314 54.763C67.3574 54.762 67.1704 49.739 67.1704 49.739C67.1704 49.739 67.1704 9.56297 67.1704 4.48297ZM12.9824 37.192C9.28442 37.192 6.28641 32.591 6.28641 26.917C6.28641 21.243 9.28442 16.642 12.9824 16.642C16.6804 16.642 19.6784 21.243 19.6784 26.917C19.6784 32.591 16.6804 37.192 12.9824 37.192ZM49.1404 38.618C44.4784 38.618 40.6994 33.379 40.6994 26.917C40.6994 20.454 44.4794 15.215 49.1404 15.215C53.8024 15.215 57.5824 20.454 57.5824 26.917C57.5824 33.379 53.8024 38.618 49.1404 38.618Z' fill='%23363636'/%3E%3C/svg%3E") center center no-repeat;
+  background-color: #FFE17F;
+}
+
 .yellow-box:hover {
   background-color: #FFC700;
 }
@@ -930,7 +957,7 @@ li.shop-menu-item {
   margin-bottom: 70px;
 }
 
-.servises-section-wrapper-1 {
+.servises-section-outer-wrapper {
   width: 1440px;
   position: absolute;
   left: 0;
@@ -938,11 +965,9 @@ li.shop-menu-item {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
-.servises-section-wrapper {
+.servises-section-inner-wrapper {
   width: 1160px;
   margin: 0 auto;
   display: flex;
@@ -950,8 +975,6 @@ li.shop-menu-item {
   align-items: center;
   z-index: 1;
 }
-
-
 
 .grey-background {
   width: 100%;
@@ -963,7 +986,7 @@ li.shop-menu-item {
 }
 
 /*----------------------------------------------------------------------------------left side*/
-.services-list-wrapper {
+.services-list-column {
   display: flex;
   align-items: center;
   height: 319px;
@@ -1061,11 +1084,14 @@ li.shop-menu-item {
 }
 
 .services-tab-content {
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
+.tab-open {
+  display: flex;
+}
 .services-header {
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -1082,21 +1108,6 @@ li.shop-menu-item {
   flex-direction: column;
   justify-content: center;
 }
-
-
-.second-tab{
-  display: none;
-}
-.third-tab {
-  display: none;
-}
-/*
-Tab visibility toggle:
-.first-tab {
-  display: none;
-}
-
-*/
 
 /*----------------------------------------------------------------------------------About Shop*/
 .about-shop {
