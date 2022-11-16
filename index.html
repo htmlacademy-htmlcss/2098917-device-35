@@ -6,19 +6,20 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" href="favicon.ico">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -31,19 +32,17 @@
       <header class="page-header">
         <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
         <div class="transparent-header-menu-wrapper">
-          <a class="logo-link" href="index.html">
-            <img class="logo" src="images/index/logo.svg" width="145" height="36" alt="Лого интернет-магазина Девайс">
-          </a>
+          <img class="logo-img" src="images/index/logo.svg" width="145" height="36" alt="Лого интернет-магазина Девайс">
 
           <div class="always-visible-part">
             <div class="user-menu-wrapper">
               <fieldset class="search-bar-fieldset">
                 <form class="top-navigation-form">
-                  <label class="top-navigation-search-label" tabindex="0">
-                    <input class="top-navigation-search-input" type="search" placeholder="Поиск по сайту" tabindex="-1">
+                  <label class="top-navigation-search-label" for="header-search" tabindex="0">
+                    <input class="top-navigation-search-input" id="header-search" type="search" placeholder="Поиск по сайту" tabindex="-1">
                   </label>
-                  <label class="top-navigation-button-label" tabindex="0">
-                    <input class="top-navigation-button-input" type="submit" value="Найти" tabindex="-1">
+                  <label class="top-navigation-button-label" for="header-search-submit" tabindex="0">
+                    <input class="top-navigation-button-input" id="header-search-submit" type="submit" value="Найти" tabindex="-1">
                   </label>
                 </form>
               </fieldset>
@@ -542,12 +541,12 @@
             <div class="email-subscription-section">
               <form class="subscription-form">
 
-                <label class="email-subscription-label">
-                  <input class="email-subscription-input" type="email" placeholder="Ваш e-mail" size="80" autocomplete="on">
+                <label class="email-subscription-label" for="email-subscription">
+                  <input class="email-subscription-input" id="email-subscription" type="email" placeholder="Ваш e-mail" size="80" autocomplete="on">
                 </label>
 
-                <label class="subscribe-label">
-                  <input class="subscribe-input" type="submit" value="подписаться">
+                <label class="subscribe-label" for="subscribe-button">
+                  <input class="subscribe-input" id="subscribe-button" type="submit" value="подписаться">
                 </label>
 
               </form>
@@ -662,25 +661,25 @@
             <form class="delivery-details" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="second-group">
                   <p class="field-group group-1">
-                    <label class="field-title" for="form_name">Ваше имя:</label>
-                    <input class="input input-name" type="text" id="form_name"  placeholder="Введите имя">
+                    <label class="field-title" for="form-name">Ваше имя:</label>
+                    <input class="input input-name" type="text" id="form-name" placeholder="Введите имя">
                   </p>
 
                   <p class="field-group group-2">
-                    <label for="form_email" class="field-title">Ваш e-mail:</label>
-                    <input class="input input-email" type="email" id="form_email" placeholder="E-mail">
+                    <label class="field-title" for="form-email">Ваш e-mail:</label>
+                    <input class="input input-email" type="email" id="form-email" placeholder="E-mail">
                     <span class="input-message">Забавный у вас адрес</span>
                   </p>
                 </div>
 
                 <div class="third-group">
                   <p class="field-group group-3">
-                    <label for="form_message" class="field-title">Что нужно привезти:</label>
-                    <textarea id="form_message" placeholder="В свободной форме" class="input input-text" rows="1"></textarea>
+                    <label class="field-title" for="form-message">Что нужно привезти:</label>
+                    <textarea class="input input-text" id="form-message" placeholder="В свободной форме" rows="1"></textarea>
                   </p>
 
                   <p class="field-group group-4">
-                    <label for="form_message" class="field-title title-amount">Количество:</label>
+                    <label for="form-message" class="field-title title-amount">Количество:</label>
                     <span class="tooltip">
                       <button class="tooltip-toggle" type="button">
                         <svg class="tooltip-icon"  aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z" fill="#000"/></svg>

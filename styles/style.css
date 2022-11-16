@@ -138,6 +138,24 @@ body {
   outline-offset: 1px;
 }
 
+.logo-img {
+  display: inline-block;
+  margin-bottom: 21px;
+}
+
+.logo-img:hover {
+  opacity: 0.6;
+}
+
+.logo-img:active {
+  opacity: 0.3;
+}
+
+.logo-img:focus-visible {
+  outline: solid 2px #AF4FFF;
+  outline-offset: 1px;
+}
+
 /*----------------------------------------------------------------------------------navigation*/
 
 /*----------------------------------------------top navigation panel*/
@@ -2387,7 +2405,7 @@ li.shop-menu-item:nth-child(6n) {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  padding: 5px 38px;
+  padding: 0 38px;
 }
 
 .catalog-button-text:after {
@@ -2401,6 +2419,10 @@ li.shop-menu-item:nth-child(6n) {
   -webkit-transition: height 0.2s ease-in-out;
   -o-transition: height 0.2s ease-in-out;
   transition: height 0.2s ease-in-out;
+}
+
+.catalog-button-text:hover:after {
+  height: 100%;
 }
 
 .catalog-button-text:active:after {
