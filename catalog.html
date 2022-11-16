@@ -6,19 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" href="favicon.ico">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -38,11 +39,11 @@
             <div class="user-menu-wrapper">
               <fieldset class="search-bar-fieldset">
                 <form class="top-navigation-form">
-                  <label class="top-navigation-search-label" tabindex="0">
-                    <input class="top-navigation-search-input" type="search" placeholder="Текст поиска" tabindex="-1">
+                  <label class="top-navigation-search-label" for="header-search" tabindex="0">
+                    <input class="top-navigation-search-input" id="header-search" type="search" placeholder="Поиск по сайту" tabindex="-1">
                   </label>
-                  <label class="top-navigation-button-label" tabindex="0">
-                    <input class="top-navigation-button-input" type="submit" value="Найти" tabindex="-1">
+                  <label class="top-navigation-button-label" for="header-search-submit" tabindex="0">
+                    <input class="top-navigation-button-input" id="header-search-submit" type="submit" value="Найти" tabindex="-1">
                   </label>
                 </form>
               </fieldset>
@@ -88,7 +89,7 @@
                             <img class="cart-image" src="images/catalog/monopode-1.jpg" width="39" height="43" alt="Любительская селфи-палка">
                             <span class="cart-text">Любительская селфи-палка</span>
                           </a>
-                          <button class="popover-close-button button button-light">
+                          <button class="popover-close-button button button-light" type="button">
                             <svg class="popover-close-icon" aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z" fill="#fff" />
                             </svg>
@@ -101,7 +102,7 @@
                             <img class="cart-image" src="images/catalog/monopode-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
                             <span class="cart-text">Профессиональная селфи-палка</span>
                           </a>
-                          <button class="popover-close-button button button-light">
+                          <button class="popover-close-button button button-light" type="button">
                             <svg class="popover-close-icon" aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z" fill="#fff" />
                             </svg>
@@ -124,7 +125,7 @@
             <nav class="bottom-navigation">
               <ul class="bottom-navigation-catalog">
                 <li class="bottom-navigation-catalog-item">
-                  <button class="navigation-link-bottom-dropdown but-make-it-a-button" type="button">каталог товаров
+                  <button class="navigation-link-bottom-dropdown" type="button">каталог товаров
                     <span class="catalog-closed"></span> <!--Change to .catalog-open to change ONLY icon form(!)-->
                   </button>
                 </li>
@@ -227,11 +228,11 @@
                       </div>
 
                       <div class="range-wrapper-inputs" style="left: 0; width: 158px">
-                        <label class="catalog-filter-label" tabindex="0">
-                          от <input class="range-input" type="number" value="0" name="min-price" tabindex="-1">
+                        <label class="catalog-filter-label" for="min-value" tabindex="0">
+                          от <input class="range-input" id="min-value" type="number" value="0" name="min-price" tabindex="-1">
                         </label>
-                        <label class="catalog-filter-label" tabindex="0">
-                          до <input class="range-input" type="number" value="5000" name="max-price" style="width: 40px" tabindex="-1">
+                        <label class="catalog-filter-label" for="max-value" tabindex="0">
+                          до <input class="range-input" id="max-value" type="number" value="5000" name="max-price" style="width: 40px" tabindex="-1">
                         </label>
                       </div>
                     </div>
@@ -243,40 +244,40 @@
                     <legend class="catalog-filter-title">Цвет</legend>
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
-                        <label class="control">
-                          <input class="visually-hidden control-input" type="checkbox" name="Black" checked>
+                        <label class="control" for="black-mark">
+                          <input class="visually-hidden control-input" id="black-mark" type="checkbox" name="Black" checked>
                           <span class="control-mark"></span>
                           <span class="control-label">Чёрный</span>
                         </label>
                       </li>
 
                       <li class="catalog-filter-item">
-                        <label class="control">
-                          <input class="visually-hidden control-input" type="checkbox" name="White" checked>
+                        <label class="control" for="white-mark">
+                          <input class="visually-hidden control-input" id="white-mark" type="checkbox" name="White" checked>
                           <span class="control-mark"></span>
                           <span class="control-label">Белый</span>
                         </label>
                       </li>
 
                       <li class="catalog-filter-item">
-                        <label class="control">
-                          <input class="visually-hidden control-input" type="checkbox" name="Blue">
+                        <label class="control" for="blue-mark">
+                          <input class="visually-hidden control-input" id="blue-mark" type="checkbox" name="Blue">
                           <span class="control-mark"></span>
                           <span class="control-label">Синий</span>
                         </label>
                       </li>
 
                       <li class="catalog-filter-item">
-                        <label class="control">
-                          <input class="visually-hidden control-input" type="checkbox" name="Red">
+                        <label class="control" for="red-mark">
+                          <input class="visually-hidden control-input" id="red-mark" type="checkbox" name="Red">
                           <span class="control-mark"></span>
                           <span class="control-label">Красный</span>
                         </label>
                       </li>
 
                       <li class="catalog-filter-item">
-                        <label class="control">
-                          <input class="visually-hidden control-input" type="checkbox" name="Pink">
+                        <label class="control" for="pink-mark">
+                          <input class="visually-hidden control-input" id="pink-mark" type="checkbox" name="Pink">
                           <span class="control-mark"></span>
                           <span class="control-label">Розовый</span>
                         </label>
@@ -291,16 +292,16 @@
                     <legend class="catalog-filter-title">Bluetooth</legend>
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
-                        <label class="control">
-                          <input class="visually-hidden control-input" type="radio" name="product-group" value="yes" checked>
+                        <label class="control" for="yes-mark">
+                          <input class="visually-hidden control-input" id="yes-mark" type="radio" name="product-group" value="yes" checked>
                           <span class="radio-control-mark"></span>
                           <span class="control-label">Есть</span>
                         </label>
                       </li>
 
                       <li class="catalog-filter-item">
-                        <label class="control">
-                          <input class="visually-hidden control-input" type="radio" name="product-group" value="no">
+                        <label class="control" for="no-mark">
+                          <input class="visually-hidden control-input" id="no-mark" type="radio" name="product-group" value="no">
                           <span class="radio-control-mark"></span>
                           <span class="control-label">Нет</span>
                         </label>
@@ -309,7 +310,7 @@
                   </fieldset>
                 </div>
                 <div class="filter-button-more">
-                  <button class="filter-button-text">Показать</button>
+                  <button class="filter-button-text" type="button">Показать</button>
                 </div>
               </form>
             </div>
@@ -360,7 +361,7 @@
                     </a>
                     <div class="overlay">
                       <div class="catalog-button">
-                        <button class="catalog-button-text">Подробнее</button>
+                        <button class="catalog-button-text" type="button">Подробнее</button>
                       </div>
                     </div>
                     <div class="card-name-price-box">
@@ -378,7 +379,7 @@
                     </a>
                     <div class="overlay">
                       <div class="catalog-button">
-                        <button class="catalog-button-text">Подробнее</button>
+                        <button class="catalog-button-text" type="button">Подробнее</button>
                       </div>
                     </div>
                     <div class="card-name-price-box">
@@ -397,7 +398,7 @@
                     </a>
                     <div class="overlay">
                       <div class="catalog-button">
-                        <button class="catalog-button-text">Подробнее</button>
+                        <button class="catalog-button-text" type="button">Подробнее</button>
                       </div>
                     </div>
                     <div class="card-name-price-box">

@@ -138,6 +138,16 @@ body {
   outline-offset: 1px;
 }
 
+.logo-img {
+  display: inline-block;
+  margin-bottom: 21px;
+}
+
+.logo-img:focus-visible {
+  outline: solid 2px #AF4FFF;
+  outline-offset: 1px;
+}
+
 /*----------------------------------------------------------------------------------navigation*/
 
 /*----------------------------------------------top navigation panel*/
@@ -404,24 +414,7 @@ body {
   margin-right: 0;
 }
 
-/*Uncomment if it's a link:
 .navigation-link-bottom-dropdown {
-  text-decoration: none;
-  color: #000000;
-  text-align: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  height: 54px;
-  padding-right: 70px;
-}
-*/
-
-.but-make-it-a-button {
   background: none;
   border: none;
   color: #000000;
@@ -589,9 +582,8 @@ body {
 
 .dropdown-2 {
   min-width: 211px;
-  /*margin-right: 30px;*/
 }
-/*Если смотреть по пиксель-перфекту, то маржина нет, а если нормально делать, то он должен быть?*/
+
 .dropdown-3 {
   min-width: 211px;
   margin-right: 30px;
@@ -1026,12 +1018,6 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  /*-webkit-column-count: 6;
-  -moz-column-count: 6;
-       column-count: 6;
-  -webkit-column-gap: 40px;
-  -moz-column-gap: 40px;
-       column-gap: 40px;*/
 }
 
 li.shop-menu-item {
@@ -1883,7 +1869,6 @@ li.shop-menu-item:nth-child(6n) {
 
 .catalog-filter {
   width: 200px;
-  /*margin-right: 60px;*/
 }
 
 .section-name {
@@ -2387,7 +2372,7 @@ li.shop-menu-item:nth-child(6n) {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  padding: 5px 38px;
+  padding: 0 38px;
 }
 
 .catalog-button-text:after {
@@ -2401,6 +2386,10 @@ li.shop-menu-item:nth-child(6n) {
   -webkit-transition: height 0.2s ease-in-out;
   -o-transition: height 0.2s ease-in-out;
   transition: height 0.2s ease-in-out;
+}
+
+.catalog-button-text:hover:after {
+  height: 100%;
 }
 
 .catalog-button-text:active:after {
